@@ -4,9 +4,15 @@ include('autoload.php');
 $input = file_get_contents('php://input');
 $data = json_decode($input);
 $chat_id = $data->message->chat->id;
-$text = $data->message->text." webhook reply";
+$text = $data->message->text;
 
-send_message($chat_id,$text);
+if($text == '/start'){
+	$message = 'Welcome vishwa';
+}elseif($text == '/code'){
+	$message = 'Enter Password';
+}
+
+send_message($chat_id,$message);
 
 
  ?>
