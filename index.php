@@ -36,7 +36,7 @@ if(isset($_POST['submit'])){
 <body>
 	<form action='./' method='post'>
 		<input type="text" name="message" required>
-		<input type="submit" value="send" name="submit">
+		<input type="submit" value="send2" name="submit">
 	</form>
 </body>
 </html>
