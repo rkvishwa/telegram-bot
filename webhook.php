@@ -12,6 +12,11 @@ if($text == '/start'){
 	$message = 'Enter <b>Password</b>';
 }else{
 	$message = 'ow';
+	if(!is_user_exist($con,$text)){
+		$message = 'in valid password';
+	}else{
+		$message = "Hello ". is_user_exist($con,$text);
+	}
 }
 send_message($chat_id,$message);
 
