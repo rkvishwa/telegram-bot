@@ -12,9 +12,9 @@ if($text == '/start'){
 	$message = 'Enter <b>Password</b>';
 }else{
 	if(!is_user_exist($con,$message)){
-		$message = 'in valide pasword';
+		$message = 'in valid pasword';
 	}else{
-		$message = "Hello". is_user_exist($con,$password);
+		$message = "Hello". is_user_exist($con,$message);
 	}
 }
 
