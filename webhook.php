@@ -1,11 +1,11 @@
 <?php 
 include('autoload.php');
 
-$input = file_get_contents('php://input');
-$data = json_decode($input);
-$chat_id = $data->message->chat->id;
-$text = $data->message->text;
-
+//$input = file_get_contents('php://input');
+//$data = json_decode($input);
+//$chat_id = $data->message->chat->id;
+//$text = $data->message->text;
+$text = 'iamvishwa';
 if($text == '/start'){
 	$message = 'Welcome%0Adude';
 }elseif($text == '/code'){
@@ -17,7 +17,7 @@ if($text == '/start'){
 		$message = "Hello ". is_user_exist($con,$text);
 	}
 }
-
-send_message($chat_id,$message);
+echo $message;
+//send_message($chat_id,$message);
 
  ?>
