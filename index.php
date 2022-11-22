@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
 	$text = $_POST['message'];
 	$token = '5817268721:AAG6qqTHLsAQtcjfeQm7n5B1TE4WvAk2i0o';
 	$chat_id = 1207819742;
-	$url = "https://api.telegram.org/bot$token/sendMessage?text=$text&chat_id=$chat_id";
+	$url = "https://api.telegram.org/bot$token/sendMessage?text=$text&chat_id=$chat_id&pars_mode=html";
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $url);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
