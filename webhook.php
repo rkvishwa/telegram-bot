@@ -5,7 +5,7 @@ $input = file_get_contents('php://input');
 $data = json_decode($input);
 $chat_id = $data->message->chat->id;
 $text = $data->message->text;
-send_message($chat_id,$message);exit;
+send_message($chat_id,$text);exit;
 if($text == '/start'){
 	$message = 'Welcome%0Adude';
 }elseif($text == '/code'){
