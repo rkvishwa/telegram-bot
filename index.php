@@ -1,5 +1,7 @@
 <?php
-$code = "https://api.telegram.org/bot5817268721:AAG6qqTHLsAQtcjfeQm7n5B1TE4WvAk2i0o/getUpdates";
+//$code = "https://api.telegram.org/bot5817268721:AAG6qqTHLsAQtcjfeQm7n5B1TE4WvAk2i0o/getUpdates";
+//$setcode = "https://api.telegram.org/bot5817268721:AAG6qqTHLsAQtcjfeQm7n5B1TE4WvAk2i0o/setWebhook?url=https://rvkbot.tk/webhook.php";
+//$getcode = "https://api.telegram.org/bot5817268721:AAG6qqTHLsAQtcjfeQm7n5B1TE4WvAk2i0o/getwebhookinfo";
 
 if(isset($_POST['submit'])){
 	$text = $_POST['message'];
