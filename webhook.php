@@ -7,9 +7,15 @@ $chat_id = $data->message->chat->id;
 $text = $data->message->text;
 
 if($text == '/start'){
-	$message = 'Welcome vishwa';
+	$message = 'Welcome%0Adude';
 }elseif($text == '/code'){
-	$message = 'Enter %0A <b>Password</b>';
+	$message = 'Enter <b>Password</b>';
+}else{
+	if(!is_user_exist($con,$message)){
+		$message = 'in valide pasword';
+	}else{
+		$message = "Hello". is_user_exist($con,$password);
+	}
 }
 
 send_message($chat_id,$message);
