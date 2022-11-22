@@ -9,7 +9,7 @@ $text = $data->message->text;
 if($text == '/start'){
 	$message = 'Welcome vishwa';
 }elseif($text == '/code'){
-	$message = 'Enter %OA Password';
+	$message = 'Enter %0A Password';
 }
 
 send_message($chat_id,$message);
